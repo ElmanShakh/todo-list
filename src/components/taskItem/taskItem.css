@@ -1,0 +1,150 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ==================== TASK ITEM ==================== */
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.25rem;
+}
+
+/* ==================== TASK CONTENT ==================== */
+
+.task-item_content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  min-width: 0;
+}
+
+.task-item_title {
+  flex: 1;
+  min-width: 0;
+  padding: 0 0.5rem;
+  color: var(--txt-color);
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+.task-item_title-completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+/* ==================== EDIT FORM ==================== */
+
+.edit-form {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 0;
+  min-width: 0;
+}
+
+.task-item_edit {
+  flex: 1;
+  min-width: 0;
+  min-height: 2.25rem;
+  border: 1px solid var(--edit-border-color);
+  border-radius: 999px;
+  padding: 0 0.5rem;
+  outline: none;
+  color: var(--txt-color);
+  font: inherit;
+  font-size: 1rem;
+  background: var(--edit-input-color);
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+
+.task-item_edit:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(100, 116, 139, 0.35);
+}
+
+/* ==================== BUTTONS ==================== */
+
+/*ANIMATION*/
+.edit-form,
+.task-item_content .task-item_edit_btn,
+.task-item_content .task-item_del_btn {
+  animation: fade-in 0.3s ease-out;
+}
+/*ANIMATION*/
+
+.task-item_edit_btn,
+.task-item_del_btn,
+.task-item_btn {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  font-size: 1.07rem;
+  line-height: 1;
+  background: transparent;
+  cursor: pointer;
+}
+
+.task-item_edit_btn:hover,
+.task-item_del_btn:hover,
+.task-item_btn:hover {
+  background-color: var(--btns-color-hover);
+}
+
+.task-item_edit_btn:focus-visible,
+.task-item_del_btn:focus-visible,
+.task-item_btn:focus-visible {
+  outline: 1px solid var(--color-accent);
+}
+
+/* ==================== CHECKBOX ==================== */
+
+.task-item_checkbox,
+.task-item_checkbox-active {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+}
+
+.task-item_checkbox {
+  border: 1.5px solid var(--text-muted);
+  background: none;
+}
+
+.task-item_checkbox-active {
+  border: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2322c55e'/%3E%3Cpath d='M20 33L29 42L45 24' fill='none' stroke='%23fff' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.task-item_checkbox:focus-visible,
+.task-item_checkbox-active:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ==================== ACCESSIBILITY ==================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .edit-form,
+  .task-item_content .task-item_edit_btn,
+  .task-item_content .task-item_del_btn {
+    animation: none;
+  }
+}

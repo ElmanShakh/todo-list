@@ -1,0 +1,17 @@
+:root {
+  --main-gradient-bg: linear-gradient(
+    135deg,
+   #E6ECF0 0%,  
+   #DBE3E8 50%, 
+   #C1D1DC 100% 
+);
+  --txt-color: rgba(51, 65, 85, 1);
+  --text-muted: rgba(100, 116, 139, 1); 
+  --form-input-color: rgba(255, 255, 255, 0.8); 
+  --edit-input-color: rgba(255, 255, 255, 0.25);
+  --edit-border-color: rgba(100, 116, 139, 0.35); 
+  --color-accent: rgba(52, 73, 83, 1);;
+  --color-accent-hover: rgba(37, 52, 61, 1);
+  --color-on-accent: rgba(248, 250, 252, 1);;
+  --btns-color-hover: rgba(64, 81, 89, 0.1);
+}

@@ -1,0 +1,17 @@
+[data-theme="dark"] {
+  --main-gradient-bg: linear-gradient(
+    135deg,
+    rgba(30, 41, 59, 1) 0%,
+    rgba(22, 32, 50, 1) 50%,
+    rgba(15, 23, 42, 1) 100%
+  );
+  --txt-color: rgba(203, 213, 225, 1);
+  --text-muted: rgba(148, 163, 184, 1);
+  --form-input-color: rgba(51, 65, 85, 0.6);
+  --edit-input-color: rgba(255, 255, 255, 0.06);
+  --edit-border-color: rgba(148, 163, 184, 0.35);
+  --color-accent: rgba(148, 163, 184, 1);
+  --color-accent-hover: rgba(203, 213, 225, 1);
+  --color-on-accent: rgba(15, 23, 42, 1);
+  --btns-color-hover: rgba(148, 163, 184, 0.15);
+}
