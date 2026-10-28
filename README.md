@@ -1,7 +1,7 @@
 # ToDo List
 A pet project built to practice React, with drag-and-drop and theme switching.
 
-![App Screenshot](.github/assets/screenshot.png)
+![App Screenshot](.github/assets/images/screenshot.png )
 
 ## Tech stack
 
