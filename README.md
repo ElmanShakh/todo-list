@@ -11,6 +11,7 @@ A pet project built to practice React, with drag-and-drop and theme switching.
 + LocalStorage
 + Vite
 + CSS
++ Jest Testing Library
 
 ## Functionality
 
@@ -26,7 +27,13 @@ npm install
 npm run dev
 ```
 
+## Testing
+
+```bash
+npm test
+```
+
 ## Plans
 
-+ [ ] Tests
++ [x] Tests
 + [ ] Filters by task status
