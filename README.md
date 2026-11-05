@@ -11,7 +11,8 @@ A pet project built to practice React, with drag-and-drop and theme switching.
 + LocalStorage
 + Vite
 + CSS
-+ Jest Testing Library
++ Jest and React Testing Library
++ Playwright
 
 ## Functionality
 
@@ -29,11 +30,20 @@ npm run dev
 
 ## Testing
 
+Unit tests cover the custom hooks `useTasks` and `useLocalStorage`:
+
 ```bash
 npm test
 ```
 
+End-to-end tests (Playwright) cover the main user flows: adding a task and keeping it after a page reload, completing, editing, deleting a task, and switching the theme:
+
+```bash
+npx playwright install chromium   # first run only
+npx playwright test
+```
+
 ## Plans
 
-+ [x] Tests
++ [x] Tests (unit and e2e)
 + [ ] Filters by task status

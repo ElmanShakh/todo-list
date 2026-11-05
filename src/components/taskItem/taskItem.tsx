@@ -81,7 +81,7 @@ export function TaskItem({
   );
 
   return (
-    <div className="task-item" ref={ref}>
+    <div className="task-item" data-testid="task-item" ref={ref}>
       <button
         aria-checked={completed}
         aria-label={`Complete task ${name}`}
